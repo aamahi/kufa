@@ -19,7 +19,7 @@
                                     <a><i class="fa fa-magic" aria-hidden="true"></i><span>Users</span></a>
                                     <ul class="nav child-nav level-1">
                                         <li><a href="helpers_background-border.html">Background & Border</a></li>
-                                        <li><a href="helpers_margin-padding.html">Margin & Padding</a></li>
+                                        <li><a href="helpers_margin-padding.html">Add User</a></li>
                                     </ul>
                                 </li>
                             </ul>
