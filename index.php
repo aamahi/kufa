@@ -5,7 +5,7 @@
 
         <!-- header-start -->
         <?php
-            include_once('mahi/layout/header.php');
+            include_once('mahi/layout/header.php'); 
         ?>
         <!-- header-end -->
 

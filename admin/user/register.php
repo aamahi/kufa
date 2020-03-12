@@ -47,7 +47,8 @@ include_once('header.php');
                             </div>
                         </div>
                         <div class="form-group">
-                            <a href="index.html" class="btn btn-primary btn-block">Register</a>
+                            <!-- <a href="index.html" class="btn btn-primary btn-block">Register</a> -->
+                            <input type="submit" class="btn btn-primary btn-block" value="Register" name = "register">
                         </div>
                         <div class="form-group text-center">
                             Have an account?, <a href="signin.php">Sign In</a>

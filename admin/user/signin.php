@@ -35,10 +35,10 @@ include_once('header.php');
                             </div>
                         </div>
                         <div class="form-group">
-                            <a href="../index.php" class="btn btn-primary btn-block">Sign in</a>
+                            <input type="submit" class="btn btn-primary btn-block" value="Sign in" name = "signin">
+                            <!-- <a href="../index.php" class="btn btn-primary btn-block">Sign in</a> -->
                         </div>
                         <div class="form-group text-center">
-                            <a href="pages_forgot-password.html">Forgot password?</a>
                             <hr/>
                              <span>Don't have an account?</span>
                             <a href="register.php" class="btn btn-block mt-sm">Register</a>
