@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once('../../database.php');
+
+?>
 <!doctype html>
 <html lang="en" class="fixed accounts sign-in">
 

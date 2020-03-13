@@ -1,7 +1,6 @@
 <?php 
 $title = "Register";
 include_once('header.php');
-include_once('../../database.php');
 
 include_once('reg.php');
 ?>

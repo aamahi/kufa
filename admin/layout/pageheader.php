@@ -28,8 +28,7 @@
                             <img alt="profile photo" src="images/avatar/avatar_user.jpg" />
                         </div>
                         <div class="user-info">
-                            <span class="user-name">Hasin Hayder</span>
-                            <span class="user-profile">Softwear engineer</span>
+                            <span class="user-name"><?=$_SESSION['user']['name'];?>></span>
                         </div>
                         <i class="fa fa-plus icon-open" aria-hidden="true"></i>
                         <i class="fa fa-minus icon-close" aria-hidden="true"></i>

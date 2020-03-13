@@ -12,16 +12,28 @@ if($_POST['register']){
     $numbercase = preg_match('@[0-9]@',$password);
 
     $input_error = [];
+
+    $select_username = "SELECT*FROM `user` WHERE `username`= '{$username}'";
+    $user_name_from_db = mysqli_query($db,$select_username);
+
+    $select_email = "SELECT*FROM `user` WHERE `email`= '{$email}'";
+    $email_from_db = mysqli_query($db,$select_email);
+
+
     if(empty($name)){
         $input_error['nameError'] = "Name is Required";
     }
     if(empty($username)){
         $input_error['usernameError'] = "User Name is Required";
+    }elseif($user_name_from_db->num_rows !=0){
+        $input_error['usernameError'] = "Username is already used";
     }
     if(empty($email)){
         $input_error['emailError'] = "Email is Required";
     }elseif(!filter_var($email,FILTER_VALIDATE_EMAIL)){
         $input_error['emailError'] = "Email Address Invalid";
+    }elseif($email_from_db->num_rows !=0){
+        $input_error['emailError'] = "Email is already used";
     }
     if(empty($password)){
         $input_error['passwordError'] = "Password is Required";
@@ -48,18 +60,25 @@ if($_POST['register']){
     $explode_image = explode('.',$original_image);
     $imgae_extension = end($explode_image);
     $user_image_name = "{$username}.{$imgae_extension}";
+    $password_hasing = md5($confirm_password);
 
     if(0==count($input_error)){
         $typeCheck = array('jpg','png','jpeg','JPG','PNG','JPEG');
         if(in_array($imgae_extension,$typeCheck)){
             $user_image_upload_location = "../images/user/".$user_image_name;
             
-            move_uploaded_file($_FILES['user_image']['tmp_name'],$user_image_upload_location);
-           
-           $sql = "INSERT INTO `user`(`id`, `name`, `username`, `email`, `status`, `password`, `image`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
-
+            $upload = move_uploaded_file($_FILES['user_image']['tmp_name'],$user_image_upload_location);
+            if($upload){
+                $sql = "INSERT INTO `user`(`name`, `username`, `email`,`password`, `image`) VALUES ('{$name}','{$username}','{$email}','{$password_hasing}','{$user_image_name}')";
+                $insert = mysqli_query($db,$sql);
+                if($insert){
+                    header("location:signin.php");
+                }
+            }else{
+            $input_error['image']="Image upload Failed";
+            }
         }else{
-           $input_error['image']="Please upload a image file";
+            $input_error['image']="Please upload a image file";
         }
        
 

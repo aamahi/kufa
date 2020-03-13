@@ -1,3 +1,12 @@
+
+<?php
+session_start();
+
+//    if(!isset($_SESSION['user'])){
+//    header('/user/signin.php');
+//    }
+
+?>
 <!doctype html>
 <html lang="en" class="fixed left-sidebar-top">
 
