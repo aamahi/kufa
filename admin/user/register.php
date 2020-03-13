@@ -19,33 +19,68 @@ include_once('reg.php');
                     <form action ="" method="post" enctype = "multipart/form-data">
                         <div class="form-group mt-md">
                             <span class="input-with-icon">
-                                <input type="text" class="form-control" name="name" placeholder="Name">
+                                <input type="text" class="form-control" name="name" placeholder="Name" value="<?=$name?>">
                                 <i class="fa fa-user"></i>
                             </span>
+                            <?php 
+                                if(isset($input_error['nameError'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['nameError']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group mt-md">
                             <span class="input-with-icon">
-                                <input type="text" class="form-control" name="username" placeholder="User Name">
+                                <input type="text" class="form-control" name="username" placeholder="User Name" value=<?=$username?>>
                                 <i class="fa fa-user"></i>
                             </span>
+                            <?php 
+                                if(isset($input_error['usernameError'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['usernameError']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group mt-md">
                             <span class="input-with-icon">
-                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="<?=$email?>">
                                 <i class="fa fa-envelope"></i>
                             </span>
+                            <?php 
+                                if(isset($input_error['emailError'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['emailError']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group">
                             <span class="input-with-icon">
-                                <input type="password" class="form-control" name="password" placeholder="Password">
+                                <input type="password" class="form-control" name="password" placeholder="Password" value="<?=$password?>">
                                 <i class="fa fa-key"></i>
                             </span>
+                             <?php 
+                                if(isset($input_error['passwordError'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['passwordError']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group">
                             <span class="input-with-icon">
-                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" value="<?=$confirm_password?>">
                                 <i class="fa fa-key"></i>
                             </span>
+                             <?php 
+                                if(isset($input_error['confirm_passwordError'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['confirm_passwordError']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group">
                             <span class="input-with-icon">
