@@ -36,8 +36,10 @@ if (isset($_POST['signin'])){
             $status = $row['status'];
            if ($passwordHasing == $password_from_db){
                if ($status == 1){
-                   $_SESSION['user']= $user;
+//                  print_r($row);
+                   $_SESSION['user_all_info'] = $row;
                    header("location:../index.php");
+
                }else{
                    $input_error['deactive'] = "Your Account is Deactive";
                }

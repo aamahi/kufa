@@ -25,10 +25,10 @@
                 <div class="header-section" id="user-headerbox">
                     <div class="user-header-wrap">
                         <div class="user-photo">
-                            <img alt="profile photo" src="images/avatar/avatar_user.jpg" />
+                            <img alt="profile photo" src="images/user/<?=$_SESSION['user_all_info']['image'];?>" />
                         </div>
                         <div class="user-info">
-                            <span class="user-name"><?=$_SESSION['user']['name'];?>></span>
+                            <span class="user-name"><?=$_SESSION['user_all_info']['name'];?></span>
                         </div>
                         <i class="fa fa-plus icon-open" aria-hidden="true"></i>
                         <i class="fa fa-minus icon-close" aria-hidden="true"></i>

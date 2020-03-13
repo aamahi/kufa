@@ -2,8 +2,8 @@
 <?php
 session_start();
 
-//    if(!isset($_SESSION['user'])){
-//    header('/user/signin.php');
+//    if(!isset($_SESSION['user_all_info'])){
+//    header('location:user/signin.php');
 //    }
 
 ?>
