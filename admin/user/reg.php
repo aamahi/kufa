@@ -40,9 +40,28 @@ if($_POST['register']){
     }elseif($confirm_password != $password){
         $input_error['confirm_passwordError'] = "Confirm Password dosen't match";
     }
+    if(empty($user_image)){
+        $input_error['image']="Please upload a photo";
+    }
+
+    $original_image = $user_image['name'];
+    $explode_image = explode('.',$original_image);
+    $imgae_extension = end($explode_image);
+    $user_image_name = "{$username}.{$imgae_extension}";
 
     if(0==count($input_error)){
-       $sql = "";
+        $typeCheck = array('jpg','png','jpeg','JPG','PNG','JPEG');
+        if(in_array($imgae_extension,$typeCheck)){
+            $user_image_upload_location = "../images/user/".$user_image_name;
+            
+            move_uploaded_file($_FILES['user_image']['tmp_name'],$user_image_upload_location);
+           
+           $sql = "INSERT INTO `user`(`id`, `name`, `username`, `email`, `status`, `password`, `image`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
+
+        }else{
+           $input_error['image']="Please upload a image file";
+        }
+       
 
     }
 }

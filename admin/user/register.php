@@ -89,6 +89,13 @@ include_once('reg.php');
                                 <input type="file" class="form-control" name="user_image">
                                 <i class="fa fa-image"></i>
                             </span>
+                            <?php 
+                                if(isset($input_error['image'])):
+                            ?>
+                                    <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['image']?></p>
+                            <?php
+                                endif;
+                            ?>
                         </div>
                         <div class="form-group">
                             <div class="checkbox-custom checkbox-primary">
