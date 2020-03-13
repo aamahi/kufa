@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-
+include_once ('../database.php');
 //    if(!isset($_SESSION['user_all_info'])){
 //    header('location:user/signin.php');
 //    }
@@ -35,13 +35,14 @@ session_start();
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <!--Magnific popup-->
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <!--dataTable-->
+    <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
     <!--TEMPLATE css-->
     <!-- ========================================================= -->
     <link rel="stylesheet" href="stylesheets/css/style.css">
 
 
 </head>
-
 <body>
     <div class="wrap">
         <!-- page HEADER -->

@@ -22,6 +22,9 @@
                                         <li><a href="helpers_margin-padding.html">Add User</a></li>
                                     </ul>
                                 </li>
+<!--                                alluser-->
+                                <li ><a href="all_user.php"><i class="fa fa-user" aria-hidden="true"></i><span>All User</span></a></li>
+
                             </ul>
                         </nav>
                     </div>
