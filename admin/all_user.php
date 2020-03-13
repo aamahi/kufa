@@ -45,7 +45,7 @@ $all_users = mysqli_query($db,$select_all_user);
                                     foreach ($all_users as $user):
                                 ?>
                                     <tr>
-                                        <td><img width="48" src="images/user/<?=$user['image'];?>"></td> 
+                                        <td><img width="48" src="images/user/<?=$user['image'];?>"></td>
                                         <td><?=$user['name'];?></td>
                                         <td><?=$user['username']?></td>
                                         <td><?=$user['email'];?></td>
@@ -57,7 +57,7 @@ $all_users = mysqli_query($db,$select_all_user);
                                             <?php
                                                 }else{
                                              ?>
-                                                <a href="" class="btn btn-warning">Deactive</a>
+                                                <a href="layout/active.php?id=<?=$user['id'];?>" class="btn btn-warning">Deactive</a>
                                             <?php
                                                  }
                                             ?>
