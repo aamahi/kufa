@@ -1,6 +1,7 @@
 <?php 
 $title = "Register";
 include_once('header.php');
+include_once('reg.php');
 ?>
 <div class="wrap">
     <!-- page BODY -->
@@ -15,29 +16,41 @@ include_once('header.php');
             <!--SIGN IN FORM-->
             <div class="panel mb-none">
                 <div class="panel-content bg-scale-0">
-                    <form>
+                    <form action ="" method="post" enctype = "multipart/form-data">
                         <div class="form-group mt-md">
                             <span class="input-with-icon">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
                                 <i class="fa fa-user"></i>
                             </span>
                         </div>
                         <div class="form-group mt-md">
                             <span class="input-with-icon">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="text" class="form-control" name="username" placeholder="User Name">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="form-group mt-md">
+                            <span class="input-with-icon">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
                                 <i class="fa fa-envelope"></i>
                             </span>
                         </div>
                         <div class="form-group">
                             <span class="input-with-icon">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
                                 <i class="fa fa-key"></i>
                             </span>
                         </div>
                         <div class="form-group">
                             <span class="input-with-icon">
-                                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
                                 <i class="fa fa-key"></i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-with-icon">
+                                <input type="file" class="form-control" name="user_image">
+                                <i class="fa fa-image"></i>
                             </span>
                         </div>
                         <div class="form-group">
