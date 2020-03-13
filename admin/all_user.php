@@ -62,7 +62,9 @@ $all_users = mysqli_query($db,$select_all_user);
                                                  }
                                             ?>
                                         </td>
-                                        <td>Action</td>
+                                        <td>
+                                            <a href="layout/delete.php?id=<?=$user['id'];?>" class="btn btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                  <?php
                                     endforeach;
