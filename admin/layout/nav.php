@@ -18,7 +18,7 @@
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-magic" aria-hidden="true"></i><span>Clint</span></a>
                                     <ul class="nav child-nav level-1">
-                                        <li><a href="helpers_background-border.html">Background & Border</a></li>
+                                        <li><a href="all_clint.php">All Clint</a></li>
                                         <li><a href="add_clint.php">Add Clint</a></li>
                                     </ul>
                                 </li>
