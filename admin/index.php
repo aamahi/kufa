@@ -86,7 +86,7 @@
                                         <li class="active"><a href="#home" data-toggle="tab">User</a></li>
                                         <li><a href="#profile" data-toggle="tab">Clint</a></li>
                                         <li><a href="#messages" data-toggle="tab">Messages</a></li>
-                                        <li><a href="#settings" data-toggle="tab"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                                        <li><a href="#settings" data-toggle="tab"><i class="fa fa-cog" aria-hidden="true"></i> Service</a></li>
                                     </ul>
                                     <!-- Tabs Content -->
                                     <div class="tab-content">
