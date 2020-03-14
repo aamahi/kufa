@@ -83,8 +83,8 @@
                                 <div class="tabs mt-none">
                                     <!-- Tabs Header -->
                                     <ul class="nav nav-tabs nav-justified">
-                                        <li class="active"><a href="#home" data-toggle="tab">Employees</a></li>
-                                        <li><a href="#profile" data-toggle="tab">Sells</a></li>
+                                        <li class="active"><a href="#home" data-toggle="tab">User</a></li>
+                                        <li><a href="#profile" data-toggle="tab">Clint</a></li>
                                         <li><a href="#messages" data-toggle="tab">Messages</a></li>
                                         <li><a href="#settings" data-toggle="tab"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
                                     </ul>
@@ -95,53 +95,82 @@
                                                 <table class="table table-striped table-hover">
                                                     <thead>
                                                         <tr>
+                                                            <th>Image</th>
                                                             <th>Name</th>
-                                                            <th>Position</th>
-                                                            <th>Office</th>
-                                                            <th>Age</th>
+                                                            <th>User Name</th>
+                                                            <th>email</th>
+                                                            <th>Status</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+                                                    <?php
+                                                        foreach ($all_users as $user):
+                                                    ?>
                                                         <tr>
-                                                            <td>Olivia Liang</td>
-                                                            <td>Support Engineer</td>
-                                                            <td>Singapore</td>
-                                                            <td>34</td>
+                                                            <td> <img width="48" src="images/user/<?=$user['image'];?>"> </td>
+                                                            <td><?=$user['name'];?></td>
+                                                            <td><?=$user['username']?></td>
+                                                            <td><?=$user['email'];?></td>
+                                                            <td>
+                                                                <?php
+                                                                if($user['status']==1) {
+                                                                    ?>
+                                                                    <a href="all_user.php>" class="btn btn-success">Active</a>
+                                                                    <?php
+                                                                }else{
+                                                                    ?>
+                                                                    <a href="all_user.php?>" class="btn btn-warning">Deactive</a>
+                                                                    <?php
+                                                                }
+                                                                ?>
+                                                            </td>
+
                                                         </tr>
-                                                        <tr>
-                                                            <td>Bruno Nash</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>38</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Sakura Yamamoto</td>
-                                                            <td>Support Engineer</td>
-                                                            <td>Tokyo</td>
-                                                            <td>37</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Michael Bruce</td>
-                                                            <td>Javascript Developer</td>
-                                                            <td>Singapore</td>
-                                                            <td>29</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Donna Snider</td>
-                                                            <td>Customer Support</td>
-                                                            <td>New York</td>
-                                                            <td>27</td>
-                                                        </tr>
+                                                    <?php
+                                                        endforeach;
+                                                    ?>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="profile">
-                                            <p><b>Profile</b> content</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus
-                                                nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla
-                                                libero. Donec iaculis sit amet nibh non laoreet.
-                                            </p>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Company Logo</th>
+                                                        <th>Company Name</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <?php
+                                                    foreach ($all_clint as $clint):
+                                                        ?>
+                                                        <tr>
+                                                            <td> <img width="48" src="../clint/<?=$clint['company_logo'];?>"> </td>
+                                                            <td><?=$clint['company_name']?></td>
+                                                            <td>
+                                                                <?php
+                                                                if($clint['status']==1) {
+                                                                    ?>
+                                                                    <a href="all_clint.php" class="btn btn-success">Show</a>
+                                                                    <?php
+                                                                }else{
+                                                                    ?>
+                                                                    <a href="all_clint.php" class="btn btn-warning">Don't Show</a>
+                                                                    <?php
+                                                                }
+                                                                ?>
+                                                            </td>
+
+                                                        </tr>
+                                                    <?php
+                                                    endforeach;
+                                                    ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                         <div class="tab-pane fade" id="messages">
                                             <p><b>Message</b> content</p>
