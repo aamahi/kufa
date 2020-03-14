@@ -1,5 +1,5 @@
 <?php
-
+$title ="User";
 include_once ('header.php');
 
 $select_all_user = "SELECT * FROM `user`";
@@ -63,7 +63,7 @@ $all_users = mysqli_query($db,$select_all_user);
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/delete.php?id=<?=$user['id'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="layout/delete.php?id=<?=$user['id'];?>&img=<?=$user['image'];?>" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                  <?php
