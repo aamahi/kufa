@@ -9,6 +9,15 @@
 //        header('location:user/signin.php');
 //    }
 
+//    count user
+    $count_user = "SELECT count(*) as total_user FROM `user`";
+    $query = mysqli_query($db,$count_user);
+    $total_user = mysqli_fetch_assoc($query);
+
+//  count Clint
+    $count_clint = "SELECT count(*) as total_clint FROM `clint`";
+    $query_clint = mysqli_query($db,$count_clint);
+    $total_clint = mysqli_fetch_assoc($query_clint);
 
 ?>
             <!-- CONTENT -->
@@ -36,11 +45,11 @@
                                         <div class="panel-content">
                                             <div class="row">
                                                 <div class="col-xs-4">
-                                                    <span class="icon fa fa-globe color-darker-1"></span>
+                                                    <span class="icon fa fa-user color-darker-2"></span>
                                                 </div>
                                                 <div class="col-xs-8">
-                                                    <h4 class="subtitle color-darker-1">Views</h4>
-                                                    <h1 class="title color-primary"> 154.609</h1>
+                                                    <h4 class="subtitle color-darker-2">Total Users</h4>
+                                                    <h1 class="title color-w"> <?php echo $total_clint['total_clint']; ?></h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -51,11 +60,11 @@
                                         <div class="panel-content">
                                             <div class="row">
                                                 <div class="col-xs-4">
-                                                    <span class="icon fa fa-user color-darker-2"></span>
+                                                    <span class="icon fa fa-globe color-darker-1"></span>
                                                 </div>
                                                 <div class="col-xs-8">
-                                                    <h4 class="subtitle color-darker-2">New Users</h4>
-                                                    <h1 class="title color-w"> 105</h1>
+                                                    <h4 class="subtitle color-darker-1">Total Clint</h4>
+                                                    <h1 class="title color-primary"> <?php echo $total_user['total_user']; ?></h1>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3da75fec-8265-4983-9e76-b723435b014f" name="Default Changelist" comment="" />
+    <list default="true" id="3da75fec-8265-4983-9e76-b723435b014f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/images/user/nishap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/images/user/obaidul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/islamibankbangladesh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/all_clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/all_clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/all_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/all_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/user/asif.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/user/asif.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/user/hasin.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/user/hasin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/active.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/active.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/active_clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/active_clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/deactive.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/deactive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/deactive_clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/deactive_clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user/mahi.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user/mahi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clint/devskill.png" beforeDir="false" afterPath="$PROJECT_DIR$/clint/devskill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clint/githubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/clint/githubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clint/phpstrom.png" beforeDir="false" afterPath="$PROJECT_DIR$/clint/phpstrom.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +82,8 @@
       <workItem from="1584137429452" duration="4163000" />
       <workItem from="1584178558039" duration="7957000" />
       <workItem from="1584190586435" duration="956000" />
-      <workItem from="1584191573034" duration="2444000" />
+      <workItem from="1584191573034" duration="2970000" />
+      <workItem from="1584207334037" duration="1404000" />
     </task>
     <servers />
   </component>
@@ -71,14 +94,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="280" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1584211352768">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="280" y="27" width="865" height="741" key="CommitChangelistDialog2/70.27.1296.741@70.27.1296.741" timestamp="1584211352768" />
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1584183526757">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1584183526757" />
-    <state x="374" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1584191576213">
+    <state x="374" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1584207334919">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="374" y="225" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1584191576213" />
+    <state x="374" y="225" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1584207334919" />
     <state x="381" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584185143586">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
