@@ -2,8 +2,6 @@
 $title ="All Clint";
 include_once ('header.php');
 
-$select_all_clint = "SELECT * FROM `clint`";
-$all_clint =  mysqli_query($db,$select_all_clint);
 //print_r($all_users);
 //die();
 
@@ -49,11 +47,11 @@ $all_clint =  mysqli_query($db,$select_all_clint);
                                             <?php
                                                 if($clint['status']==1) {
                                              ?>
-                                                <a href="layout/deactive.php?id=<?=$clint['id'];?>" class="btn btn-success">Active</a>
+                                                <a href="layout/deactive_clint.php?id=<?=$clint['id'];?>" class="btn btn-success">Show</a>
                                             <?php
                                                 }else{
                                              ?>
-                                                <a href="layout/active.php?id=<?=$clint['id'];?>" class="btn btn-warning">Deactive</a>
+                                                <a href="layout/active_clint.php?id=<?=$clint['id'];?>" class="btn btn-warning">Don't Show</a>
                                             <?php
                                                  }
                                             ?>
