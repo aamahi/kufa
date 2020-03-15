@@ -1,3 +1,9 @@
+
+<?php
+include_once ('database.php');
+$select_clint = "SELECT * FROM `clint`";
+$select_clint_query = mysqli_query($db,$select_clint);
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
