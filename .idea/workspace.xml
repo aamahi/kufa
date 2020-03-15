@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da75fec-8265-4983-9e76-b723435b014f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/layout/delete_clint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/layout/up_clint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/update_clint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/islamibankbangladesh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/linkdin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/wordpress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clint/wpdeveloaper.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/all_clint.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/all_clint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,10 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/layout" />
       <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/admin/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/layout" />
       <recent name="$PROJECT_DIR$/admin/" />
     </key>
   </component>
@@ -83,10 +91,10 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="374" y="225" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1584191576213" />
-    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584185143586">
+    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584286656269">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup/70.27.1296.741@70.27.1296.741" timestamp="1584185143586" />
+    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup/70.27.1296.741@70.27.1296.741" timestamp="1584286656269" />
     <state x="443" y="285" width="540" height="232" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584182259261">
       <screen x="70" y="27" width="1296" height="741" />
     </state>

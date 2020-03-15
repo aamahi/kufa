@@ -57,7 +57,7 @@ include_once ('header.php');
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/delete_clint.php?id=<?=$clint['id'];?>&img=<?=$clint['company_logo'];?>" class="btn btn-info"><i class="fa fa-pencil"></i></a>
+                                            <a href="update_clint.php?id=<?=$clint['id'];?>&img=<?=$clint['company_logo'];?>" class="btn btn-info"><i class="fa fa-pencil"></i></a>
                                             <a href="layout/delete_clint.php?id=<?=$clint['id'];?>&img=<?=$clint['company_logo'];?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
