@@ -48,18 +48,18 @@ include_once ('header.php');
                                             <?php
                                                 if($portfolio['status']==1) {
                                              ?>
-                                                <a href="layout/deactive_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-success">Active</a>
+                                                <a href="layout/deactive_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-success">Show</a>
                                             <?php
                                                 }else{
                                              ?>
-                                                <a href="layout/active_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-warning">Deactive</a>
+                                                <a href="layout/active_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-warning">Don't Show</a>
                                             <?php
                                                  }
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/deletej.php?id=<?=$portfolio['id'];?>&img=<?=$portfolio['image'];?>" class="btn btn-danger">Delete</a>
-                                            <a href="read_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-primary">Read Message</a>
+                                            <a href="layout/delete_portfolio.php?id=<?=$portfolio['id'];?>&img=<?=$portfolio['photo'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="show_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-primary">Read Message</a>
                                         </td>
                                     </tr>
                                  <?php
