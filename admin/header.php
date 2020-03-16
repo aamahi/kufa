@@ -18,7 +18,11 @@ $all_users = mysqli_query($db,$select_all_user);
 //Tesimonial
 $select_all_testimonal = "SELECT * FROM `testimonial`";
 $all_testimonial = mysqli_query($db,$select_all_testimonal);
+//portfolio
+$select_allportfolio = "SELECT * FROM `portfolio`";
+$all_portfolio = mysqli_query($db,$select_allportfolio);
 ?>
+
 <!doctype html>
 <html lang="en" class="fixed left-sidebar-top">
 

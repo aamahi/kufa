@@ -25,7 +25,7 @@ if($_POST['add_category']){
             $image_upload_location = "../portfolio/".$photo;
             $upload = move_uploaded_file($_FILES['photo']['tmp_name'],$image_upload_location);
             if($upload){
-                $sql = "INSERT INTO `category`(`name`, `category`,`photo`) VALUES ('{$name}','{$category}','{$photo}')";
+                $sql = "INSERT INTO `portfolio`(`name`, `category`, `photo`) VALUES ('{$name}','{$category}','{$photo}')";
                 $insert = mysqli_query($db,$sql);
                 if($insert){
                     header("location:index.php");
