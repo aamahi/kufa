@@ -2,8 +2,8 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <div class="about-img">
-                                <img src="mahi/img/banner/banner_img2.png" title="me-01" alt="me-01">
+                            <div class="about-img" style="border:15px solid teal">
+                                <img style="padding: 15px" width="535" src="admin/images/user/asif.jpg" title="me-01" alt="me-01">
                             </div>
                         </div>
                         <div class="col-lg-6 pr-90">

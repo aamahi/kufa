@@ -124,11 +124,11 @@
                                                                 <?php
                                                                 if($user['status']==1) {
                                                                     ?>
-                                                                    <a href="all_user.php>" class="btn btn-success">Active</a>
+                                                                    <a href="all_user.php" class="btn btn-success">Active</a>
                                                                     <?php
                                                                 }else{
                                                                     ?>
-                                                                    <a href="all_user.php?>" class="btn btn-warning">Deactive</a>
+                                                                    <a href="all_user.php" class="btn btn-warning">Deactive</a>
                                                                     <?php
                                                                 }
                                                                 ?>
