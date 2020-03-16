@@ -32,7 +32,6 @@ include_once ('header.php');
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Position</th>
-                                    <th>Review Message</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -44,8 +43,7 @@ include_once ('header.php');
                                     <tr>
                                         <td><img width="48" src="../testimonial/<?=$testimonial['photo'];?>"></td>
                                         <td><?=$testimonial['name'];?></td>
-                                        <td><?=$testimonial['postion']?></td>
-                                        <td><?=$testimonial['review_message'];?></td>
+                                        <td><?=$testimonial['position']?></td>
                                         <td>
                                             <?php
                                                 if($testimonial['status']==1) {
@@ -60,7 +58,8 @@ include_once ('header.php');
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/delete.php?id=<?=$testimonial['id'];?>&img=<?=$testimonial['image'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="layout/deletej.php?id=<?=$testimonial['id'];?>&img=<?=$testimonial['image'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="read_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-primary">Read Message</a>
                                         </td>
                                     </tr>
                                  <?php

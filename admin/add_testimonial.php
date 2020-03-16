@@ -1,7 +1,6 @@
 <?php
-$title ="Add Clint";
+$title ="Add Testimonial";
 include_once ('header.php');
-include_once ('../database.php');
 include_once ('layout/testimonial.php');
 
 ?>

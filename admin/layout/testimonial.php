@@ -16,11 +16,11 @@ if($_POST['add_testimonial']){
     if(empty($review_message)){
         $input_error['review_messageError'] = "Review Message is Required";
     }
-    $explode_review_message = explode(' ',$review_message);
-    $review_message_end = end($explode_review_message);
+    $name_explode = explode(' ',$name);
+    $name_end = end($name_explode);
     $explode_image = explode('.',$clint_image);
     $imgae_extension = end($explode_image);
-    $photo = strtolower($review_message_end.".".$imgae_extension);
+    $photo = strtolower($name_end.".".$imgae_extension);
 
     if(0==count($input_error)){
         $typeCheck = array('jpg','png','jpeg','JPG','PNG','JPEG');
