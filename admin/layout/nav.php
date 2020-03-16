@@ -36,7 +36,7 @@
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Testimonial</span></a>
                                     <ul class="nav child-nav level-1">
-                                        <li><a href="all_kufa.php">All Kufa</a></li>
+                                        <li><a href="all_testimonial.php">All Kufa</a></li>
                                         <li><a href="add_testimonial.php">Add Testimonial</a></li>
                                     </ul>
                                 </li>

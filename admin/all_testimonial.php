@@ -1,6 +1,7 @@
 <?php
-$title ="User";
+$title ="Testimonial";
 include_once ('header.php');
+
 
 
 ?>
@@ -13,7 +14,7 @@ include_once ('header.php');
             <!-- leftside content header -->
             <div class="leftside-content-header">
                 <ul class="breadcrumbs">
-                    <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Tables</a></li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Testimonial</a></li>
                 </ul>
             </div>
         </div>
@@ -21,7 +22,7 @@ include_once ('header.php');
         <!--SEARCHING, ORDENING & PAGING-->
         <div class="row animated fadeInRight">
             <div class="col-sm-12">
-                <h4 class="section-subtitle text-center"><b>All User</b></h4>
+                <h4 class="section-subtitle text-center"><b>All Testimonial</b></h4>
                 <div class="panel">
                     <div class="panel-content">
                         <div class="table-responsive">
@@ -30,36 +31,36 @@ include_once ('header.php');
                                 <tr>
                                     <th>Image</th>
                                     <th>Name</th>
-                                    <th>User Name</th>
-                                    <th>Email</th>
+                                    <th>Position</th>
+                                    <th>Review Message</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <?php
-                                    foreach ($all_users as $user):
+                                    foreach ($all_testimonial as $testimonial):
                                 ?>
                                     <tr>
-                                        <td><img width="48" src="images/user/<?=$user['image'];?>"></td>
-                                        <td><?=$user['name'];?></td>
-                                        <td><?=$user['username']?></td>
-                                        <td><?=$user['email'];?></td>
+                                        <td><img width="48" src="../testimonial/<?=$testimonial['photo'];?>"></td>
+                                        <td><?=$testimonial['name'];?></td>
+                                        <td><?=$testimonial['postion']?></td>
+                                        <td><?=$testimonial['review_message'];?></td>
                                         <td>
                                             <?php
-                                                if($user['status']==1) {
+                                                if($testimonial['status']==1) {
                                              ?>
-                                                <a href="layout/deactive.php?id=<?=$user['id'];?>" class="btn btn-success">Active</a>
+                                                <a href="layout/deactive_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-success">Active</a>
                                             <?php
                                                 }else{
                                              ?>
-                                                <a href="layout/active.php?id=<?=$user['id'];?>" class="btn btn-warning">Deactive</a>
+                                                <a href="layout/active_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-warning">Deactive</a>
                                             <?php
                                                  }
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/delete.php?id=<?=$user['id'];?>&img=<?=$user['image'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="layout/delete.php?id=<?=$testimonial['id'];?>&img=<?=$testimonial['image'];?>" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                  <?php

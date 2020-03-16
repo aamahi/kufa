@@ -10,12 +10,14 @@ include_once ('../database.php');
 // Clint Database
 $select_all_clint = "SELECT * FROM `clint`";
 $all_clint =  mysqli_query($db,$select_all_clint);
-// User Database
 
+// User Database
 $select_all_user = "SELECT * FROM `user`";
 $all_users = mysqli_query($db,$select_all_user);
 
-
+//Tesimonial
+$select_all_testimonal = "SELECT * FROM `testimonial`";
+$all_testimonial = mysqli_query($db,$select_all_testimonal);
 ?>
 <!doctype html>
 <html lang="en" class="fixed left-sidebar-top">
