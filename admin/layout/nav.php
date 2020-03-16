@@ -40,6 +40,14 @@
                                         <li><a href="add_testimonial.php">Add Testimonial</a></li>
                                     </ul>
                                 </li>
+                                <!--Testimonial-->
+                                <li class="has-child-item close-item">
+                                    <a><i class="fa fa-briefcase" aria-hidden="true"></i><span>Portfolio</span></a>
+                                    <ul class="nav child-nav level-1">
+                                        <li><a href="all_portfolio.php">All Portfolio</a></li>
+                                        <li><a href="add_portfolio.php">Add Portfolio</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                     </div>
