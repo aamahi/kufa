@@ -52,8 +52,8 @@
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-accusoft" aria-hidden="true"></i><span>Service</span></a>
                                     <ul class="nav child-nav level-1">
-                                        <li><a href="all_portfolio.php">All Service</a></li>
-                                        <li><a href="add_portfolio.php">Add Service</a></li>
+                                        <li><a href="all_service.php">All Service</a></li>
+                                        <li><a href="add_service.php">Add Service</a></li>
                                     </ul>
                                 </li>
                             </ul>
