@@ -11,6 +11,10 @@ if($_POST['register']){
     $uppercase = preg_match('@[A-Z]@',$password);
     $numbercase = preg_match('@[0-9]@',$password);
 
+    $lowercase = preg_match('@[a-z]@',$confirm_password);
+    $uppercase = preg_match('@[A-Z]@',$confirm_password);
+    $numbercase = preg_match('@[0-9]@',$confirm_password);
+
     $input_error = [];
 
     $select_username = "SELECT*FROM `user` WHERE `username`= '{$username}'";
@@ -39,13 +43,13 @@ if($_POST['register']){
         $input_error['passwordError'] = "Password is Required";
     }elseif(!$lowercase | !$uppercase | !$numbercase){
         $input_error['passwordError'] = "Please gave a Strong Password (A-Z,a-z,0-9)";
-    }elseif(!strlen($password)>=8){
+    }elseif(strlen($password)<8){
         $input_error['passwordError'] = "Password Must to be 8 digit";
     }
 
     if(empty($confirm_password)){
         $input_error['confirm_passwordError'] = "Password is Required";
-    }elseif(!strlen($confirm_password)>=8){
+    }elseif(strlen($confirm_password)<8){
         $input_error['confirm_passwordError'] = "Password Must to be 8 digit";
     }elseif(!$lowercase | !$uppercase | !$numbercase){
         $input_error['confirm_passwordError'] = "Please gave a Strong Password (A-Z,a-z,0-9)";
