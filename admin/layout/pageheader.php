@@ -36,7 +36,7 @@
                     <div class="user-options dropdown-box">
                         <div class="drop-content basic">
                             <ul>
-                                <li> <a href="pages_user-profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                                <li> <a href="user_profile.php"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="header-separator"></div>
                 <!--Log out -->
                 <div class="header-section">
-                    <a href="user/signin.php" data-toggle="tooltip" data-placement="left" title="Logout"><i class="fa fa-sign-out log-out" aria-hidden="true"></i></a>
+                    <a href="user/logout.php" data-toggle="tooltip" data-placement="left" title="Logout"><i class="fa fa-sign-out log-out" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

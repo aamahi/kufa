@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if (isset($_SESSION['user_all_info'])){
+    header('location:../index.php');
+}
+
 include_once('../../database.php');
 
 ?>

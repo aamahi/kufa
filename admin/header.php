@@ -1,10 +1,12 @@
 
 <?php
 session_start();
+
+if (!isset($_SESSION['user_all_info'])){
+    header("location:user/signin.php");
+}
 include_once ('../database.php');
-//    if(!isset($_SESSION['user_all_info'])){
-//    header('location:user/signin.php');
-//    }
+
 // Clint Database
 $select_all_clint = "SELECT * FROM `clint`";
 $all_clint =  mysqli_query($db,$select_all_clint);

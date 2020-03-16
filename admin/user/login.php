@@ -36,8 +36,9 @@ if (isset($_POST['signin'])){
             $status = $row['status'];
            if ($passwordHasing == $password_from_db){
                if ($status == 1){
-//                  print_r($row);
                    $_SESSION['user_all_info'] = $row;
+//                   print_r($_SESSION['user_all_info']);
+//                   die();
                    header("location:../index.php");
 
                }else{
