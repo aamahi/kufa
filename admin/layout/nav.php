@@ -22,7 +22,7 @@
                                     <ul class="nav child-nav level-1">
                                         <li><a href="add_skill.php">Add Education</a></li>
                                         <li><a href="all_education.php">Education</a></li>
-                                        <li><a href="add_service.php">Add Me</a></li>
+                                        <li><a href="add_social.php">Add Social</a></li>
                                     </ul>
                                 </li>
                                 <!--Clint-->
