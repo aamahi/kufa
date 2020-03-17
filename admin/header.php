@@ -21,6 +21,10 @@ $all_testimonial = mysqli_query($db,$select_all_testimonal);
 //portfolio
 $select_allportfolio = "SELECT * FROM `portfolio`";
 $all_portfolio = mysqli_query($db,$select_allportfolio);
+
+//services
+$select_allservice = "SELECT * FROM `service`";
+$all_service = mysqli_query($db,$select_allservice);
 ?>
 
 <!doctype html>

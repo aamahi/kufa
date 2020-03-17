@@ -16,7 +16,7 @@ if($_POST['add_service']){
         $input_error['detailsError'] = "Service Details is Required";
     }
     if(0==count($input_error)){
-        $sql = "INSERT INTO `service`(`name`, `icon`, `details`) VALUES ('{$name}','{$icon}','{$details}')";
+        $sql = "INSERT INTO `service` (`name`, `icon`, `details`) VALUES ('{$name}','{$icon}','{$details}')";
         $insert = mysqli_query($db,$sql);
         header("location:all_service.php");
     }
