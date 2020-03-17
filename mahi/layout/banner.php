@@ -4,8 +4,8 @@
                         <div class="col-xl-7 col-lg-6">
                             <div class="banner-content">
                                 <h6 class="wow fadeInUp" data-wow-delay="0.2s">HELLO!</h6>
-                                <h2 class="wow fadeInUp" data-wow-delay="0.4s">I am Will Smith</h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.6s">I'm Will Smith, professional web developer with long time experience in this field​.</p>
+                                <h2 class="wow fadeInUp" data-wow-delay="0.4s"><?=$about['name'];?></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.6s"><?=$about['about_details'];?></p>
                                 <div class="banner-social wow fadeInUp" data-wow-delay="0.8s">
                                     <ul>
                                         <?php

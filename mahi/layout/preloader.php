@@ -38,6 +38,11 @@ $educations = mysqli_query($db,$select_education);
 $select_social = "SELECT * FROM `social`";
 $socials = mysqli_query($db,$select_social);
 
+//About
+$select_about = "SELECT * FROM `about` WHERE `status`=1 LIMIT 1";
+$abouts = mysqli_query($db,$select_about);
+$about = mysqli_fetch_assoc($abouts);
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">

@@ -12,12 +12,12 @@
                             </div>
                             <div class="contact-content">
                                 <p>Event definition is - somthing that happens occurre How evesnt sentence. Synonym when an unknown printer took a galley.</p>
-                                <h5>OFFICE IN <span>NEW YORK</span></h5>
+                                <h5>OFFICE IN <span>BANGLADESH</span></h5>
                                 <div class="contact-list">
                                     <ul>
-                                        <li><i class="fas fa-map-marker"></i><span>Address :</span>Event Center park WT 22 New York</li>
-                                        <li><i class="fas fa-headphones"></i><span>Phone :</span>+9 125 645 8654</li>
-                                        <li><i class="fas fa-globe-asia"></i><span>e-mail :</span>info@exemple.com</li>
+                                        <li><i class="fas fa-map-marker"></i><span>Address :</span>Momtaz Plaza (4th Floor) House#7, Road#4, Dhanmondi, Dhaka-1205</li>
+                                        <li><i class="fas fa-headphones"></i><span>Phone :</span>+88 01751989173</li>
+                                        <li><i class="fas fa-globe-asia"></i><span>e-mail :</span>amahi.wp@gmail.com</li>
                                     </ul>
                                 </div>
                             </div>
