@@ -23,7 +23,7 @@
                                         <li><a href="add_skill.php">Add Education</a></li>
                                         <li><a href="all_education.php">Education</a></li>
                                         <li><a href="add_social.php">Add Social</a></li>
-                                        <li><a href="add_social.php">All Social</a></li>
+                                        <li><a href="all_social.php">All Social</a></li>
                                     </ul>
                                 </li>
                                 <!--Clint-->
