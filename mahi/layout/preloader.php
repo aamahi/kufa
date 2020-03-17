@@ -18,7 +18,8 @@ $query_service = mysqli_query($db,$count_service);
 $total_service = mysqli_fetch_assoc($query_service);
 
 //portfolio
-$select_portfolio = "SELECT * FROM `portfolio`";
+//$select_portfolio = "SELECT * FROM `portfolio` ORDER BY `id` DESC LIMIT 3";
+$select_portfolio = "SELECT * FROM `portfolio` ORDER BY `id`";
 $portfolios = mysqli_query($db,$select_portfolio);
 //count portfolio
 $count_project = "SELECT count(*) as total_project FROM `portfolio`";

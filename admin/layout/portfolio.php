@@ -27,9 +27,9 @@ if($_POST['add_category']){
             if($upload){
                 $sql = "INSERT INTO `portfolio`(`name`, `category`, `photo`) VALUES ('{$name}','{$category}','{$photo}')";
                 $insert = mysqli_query($db,$sql);
-                if($insert){
-                    header("location:index.php");
-                }
+//                if($insert){
+                header("location:index.php");
+//                }
             }else{
                 $photo_error['photo']="Image upload Failed";
             }

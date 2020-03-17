@@ -59,7 +59,7 @@ include_once ('header.php');
                                         </td>
                                         <td>
                                             <a href="layout/delete_portfolio.php?id=<?=$portfolio['id'];?>&img=<?=$portfolio['photo'];?>" class="btn btn-danger">Delete</a>
-                                            <a href="show_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-primary">Read Message</a>
+                                            <a href="show_portfolio.php?id=<?=$portfolio['id'];?>" class="btn btn-primary">Show Portfolio</a>
                                         </td>
                                     </tr>
                                  <?php
