@@ -31,6 +31,11 @@ $all_service = mysqli_query($db,$select_allservice);
 $select_all_message= "SELECT * FROM `contact_message`";
 $all_contact_message = mysqli_query($db,$select_all_message);
 
+//All Education
+
+$select_all_education= "SELECT * FROM `education`";
+$all_education = mysqli_query($db,$select_all_education);
+
 ?>
 
 <!doctype html>

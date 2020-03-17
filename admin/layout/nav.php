@@ -16,6 +16,15 @@
                                 <li class="active-item"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
                                 <!-- User-->
                                 <li ><a href="all_user.php"><i class="fa fa-user" aria-hidden="true"></i><span>All User</span></a></li>
+                                <!--                                about me-->
+                                <li class="has-child-item close-item">
+                                    <a><i class="fa fa-info" aria-hidden="true"></i><span> About Me</span></a>
+                                    <ul class="nav child-nav level-1">
+                                        <li><a href="add_skill.php">Add Education</a></li>
+                                        <li><a href="all_education.php">Education</a></li>
+                                        <li><a href="add_service.php">Add Me</a></li>
+                                    </ul>
+                                </li>
                                 <!--Clint-->
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-magic" aria-hidden="true"></i><span>Clint</span></a>
@@ -24,15 +33,7 @@
                                         <li><a href="add_about.php">Add Clint</a></li>
                                     </ul>
                                 </li>
-<!--                                about me-->
-                                <li class="has-child-item close-item">
-                                    <a><i class="fa fa-info" aria-hidden="true"></i><span> About Me</span></a>
-                                    <ul class="nav child-nav level-1">
-                                        <li><a href="all_service.php">About Me</a></li>
-                                        <li><a href="add_skill.php">Add Skill</a></li>
-                                        <li><a href="add_service.php">Add Me</a></li>
-                                    </ul>
-                                </li>
+
                                 <!--Kufa -->
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-user-plus" aria-hidden="true"></i><span>Kufa</span></a>
