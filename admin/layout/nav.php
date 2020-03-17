@@ -56,6 +56,7 @@
                                         <li><a href="add_service.php">Add Service</a></li>
                                     </ul>
                                 </li>
+                                <li ><a href="all_message.php"><i class="fa fa-envelope" aria-hidden="true"></i><span> Contact Message</span></a></li>
                             </ul>
                         </nav>
                     </div>

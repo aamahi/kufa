@@ -25,6 +25,12 @@ $all_portfolio = mysqli_query($db,$select_allportfolio);
 //services
 $select_allservice = "SELECT * FROM `service`";
 $all_service = mysqli_query($db,$select_allservice);
+
+//Contact message
+
+$select_all_message= "SELECT * FROM `contact_message`";
+$all_contact_message = mysqli_query($db,$select_all_message);
+
 ?>
 
 <!doctype html>

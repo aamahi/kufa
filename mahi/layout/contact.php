@@ -63,7 +63,7 @@
                                     endif;
                                     ?>
 <!--                                    <button class="btn">SEND</button>-->
-                                    <input type="submit" name="send" value="SEND" class="btn">
+                                    <input type="submit" name="send" value="SEND" class="btn btn-success">
                                 </form>
                             </div>
                         </div>
