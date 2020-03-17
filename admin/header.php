@@ -40,7 +40,10 @@ $all_education = mysqli_query($db,$select_all_education);
 
 $select_all_social= "SELECT * FROM `social`";
 $all_social = mysqli_query($db,$select_all_social);
+//All about
 
+$select_all_about= "SELECT * FROM `about`";
+$all_about = mysqli_query($db,$select_all_about);
 ?>
 
 <!doctype html>
