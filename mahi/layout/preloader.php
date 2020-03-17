@@ -9,6 +9,10 @@ $service= mysqli_query($db,$select_service);
 //portfolio
 $select_portfolio = "SELECT * FROM `portfolio`";
 $portfolios = mysqli_query($db,$select_portfolio);
+
+//testimonial
+$select_testimonial = "SELECT * FROM `testimonial`";
+$testimonials = mysqli_query($db,$select_testimonial);
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
