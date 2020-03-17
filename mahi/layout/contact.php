@@ -1,4 +1,8 @@
-            <section id="contact" class="contact-area primary-bg pt-120 pb-120">
+        <?php
+            include "database.php";
+            include "mahi/contact_message.php";
+        ?>
+        <section id="contact" class="contact-area primary-bg pt-120 pb-120">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -20,11 +24,46 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="contact-form">
-                                <form action="#">
-                                    <input type="text" placeholder="your name *">
-                                    <input type="email" placeholder="your email *">
-                                    <textarea name="message" id="message" placeholder="your message *"></textarea>
-                                    <button class="btn">SEND</button>
+                                <?php
+                                    if(isset($_SESSION['success'])):
+                                ?>
+                                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                        <strong><?=$_SESSION['success']?></strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                <?php
+                                    endif;
+                                    unset($_SESSION['success']);
+                                ?>
+                                <form action="" method="post">
+                                    <input type="text" name="name" placeholder="your name *" value="<?=$name;?>">
+                                    <?php
+                                    if(isset($input_error['nameError'])):
+                                        ?>
+                                        <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['nameError']?></p>
+                                    <?php
+                                    endif;
+                                    ?>
+                                    <input type="email" name="email" placeholder="your email *" value="<?=$email?>">
+                                    <?php
+                                    if(isset($input_error['emailError'])):
+                                        ?>
+                                        <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['emailError']?></p>
+                                    <?php
+                                    endif;
+                                    ?>
+                                    <textarea name="message" id="message" placeholder="your message *"><?=$message;?></textarea>
+                                    <?php
+                                    if(isset($input_error['messageError'])):
+                                        ?>
+                                        <p class="text-danger font-weight-bolder text-uppercase"> <i class="fa fa-exclamation-circle"></i> <?=$input_error['messageError']?></p>
+                                    <?php
+                                    endif;
+                                    ?>
+<!--                                    <button class="btn">SEND</button>-->
+                                    <input type="submit" name="send" value="SEND" class="btn">
                                 </form>
                             </div>
                         </div>

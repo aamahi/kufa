@@ -36,11 +36,14 @@ if($_POST['password_change']){
             }elseif($confirm_password != $new_password){
                 $input_error['confirm_passwordError'] = "Confirm Password dosen't match";
             }else{
-                $id = $_SESSION['user_all_info']['password'];
+                $id = $_SESSION['user_all_info']['id'];
                 $confirm_password_hasing = md5($confirm_password);
-                $update_password ="UPDATE `user` SET `password` = '{$confirm_password_hasing}' `id` = {$id}";
+
+                $update_password ="UPDATE `user` SET `password`= '{$confirm_password_hasing}' WHERE `id` = {$id}";
+//                echo $update_password;
+//                die();
                 mysqli_query($db,$update_password);
-                header('location:user_profile.php');
+                header('location:index.php');
             }
         }
     }

@@ -29,7 +29,6 @@
                                 endif;
                             endforeach;
                         ?>
-                        ?>
                     </div>
                 </div>
             </section>

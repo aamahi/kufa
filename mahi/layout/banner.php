@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-xl-5 col-lg-6 d-lg-block">
                             <div class="banner-img text-right">
-                                <img src="mahi/img/banner/banner_img.png" alt="">
+                                <img src="mahi/img/banner/banner_imgn.png" alt="">
                             </div>
                         </div>
                     </div>
