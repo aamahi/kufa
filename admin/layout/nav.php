@@ -24,6 +24,8 @@
                                         <li><a href="all_education.php">Education</a></li>
                                         <li><a href="add_social.php">Add Social</a></li>
                                         <li><a href="all_social.php">All Social</a></li>
+                                        <li><a href="add_about.php">Add About</a></li>
+                                        <li><a href="all_about.php">All About</a></li>
                                     </ul>
                                 </li>
                                 <!--Clint-->
