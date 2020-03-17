@@ -3,6 +3,12 @@
 include_once ('database.php');
 $select_clint = "SELECT * FROM `clint`";
 $select_clint_query = mysqli_query($db,$select_clint);
+//service
+$select_service = "SELECT * FROM `service`";
+$service= mysqli_query($db,$select_service);
+//portfolio
+$select_portfolio = "SELECT * FROM `portfolio`";
+$portfolios = mysqli_query($db,$select_portfolio);
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
