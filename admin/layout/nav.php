@@ -21,7 +21,16 @@
                                     <a><i class="fa fa-magic" aria-hidden="true"></i><span>Clint</span></a>
                                     <ul class="nav child-nav level-1">
                                         <li><a href="all_clint.php">All Clint</a></li>
-                                        <li><a href="add_clint.php">Add Clint</a></li>
+                                        <li><a href="add_about.php">Add Clint</a></li>
+                                    </ul>
+                                </li>
+<!--                                about me-->
+                                <li class="has-child-item close-item">
+                                    <a><i class="fa fa-info" aria-hidden="true"></i><span> About Me</span></a>
+                                    <ul class="nav child-nav level-1">
+                                        <li><a href="all_service.php">About Me</a></li>
+                                        <li><a href="add_skill.php">Add Skill</a></li>
+                                        <li><a href="add_service.php">Add Me</a></li>
                                     </ul>
                                 </li>
                                 <!--Kufa -->
@@ -57,6 +66,7 @@
                                     </ul>
                                 </li>
                                 <li ><a href="all_message.php"><i class="fa fa-envelope" aria-hidden="true"></i><span> Contact Message</span></a></li>
+
                             </ul>
                         </nav>
                     </div>
