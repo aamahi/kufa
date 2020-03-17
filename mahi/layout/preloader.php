@@ -29,6 +29,15 @@ $total_project = mysqli_fetch_assoc($query_project);
 //testimonial
 $select_testimonial = "SELECT * FROM `testimonial`";
 $testimonials = mysqli_query($db,$select_testimonial);
+
+//Education
+$select_education = "SELECT * FROM `education` ORDER BY `year` DESC";
+$educations = mysqli_query($db,$select_education);
+
+//social
+$select_social = "SELECT * FROM `social`";
+$socials = mysqli_query($db,$select_social);
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">

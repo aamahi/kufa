@@ -2,7 +2,7 @@
             <!-- LEFTSIDE header -->
             <div class="leftside-header">
                 <div class="logo">
-                    <a href="index.html" class="on-click">
+                    <a href="index.php" class="on-click">
                         <img alt="logo" src="images/logo/s_logo.png" />
                     </a>
                 </div>

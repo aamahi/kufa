@@ -8,13 +8,19 @@
                                 <p class="wow fadeInUp" data-wow-delay="0.6s">I'm Will Smith, professional web developer with long time experience in this field​.</p>
                                 <div class="banner-social wow fadeInUp" data-wow-delay="0.8s">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                        <?php
+                                            foreach ($socials as $social):
+                                                if($social['status']==1):
+                                        ?>
+                                                <li><a href="<?=$social['link'];?>"><i class="fab <?=$social['icon'];?>"></i></a></li>
+
+                                        <?php
+                                                endif;
+                                            endforeach;
+                                        ?>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn wow fadeInUp" data-wow-delay="1s">SEE PORTFOLIOS</a>
+                                <a href="#" class="btn wow fadeInUp" data-wow-delay="1s">Download CV</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 d-lg-block">
