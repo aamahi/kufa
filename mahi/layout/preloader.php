@@ -1,14 +1,29 @@
 
 <?php
 include_once ('database.php');
+//clint
 $select_clint = "SELECT * FROM `clint`";
 $select_clint_query = mysqli_query($db,$select_clint);
+//clint_count
+$count_clint = "SELECT count(*) as total_clint FROM `clint`";
+$query_clint = mysqli_query($db,$count_clint);
+$total_clint = mysqli_fetch_assoc($query_clint);
+
 //service
 $select_service = "SELECT * FROM `service`";
 $service= mysqli_query($db,$select_service);
+//count service
+$count_service = "SELECT count(*) as total_service FROM `service`";
+$query_service = mysqli_query($db,$count_service);
+$total_service = mysqli_fetch_assoc($query_service);
+
 //portfolio
 $select_portfolio = "SELECT * FROM `portfolio`";
 $portfolios = mysqli_query($db,$select_portfolio);
+//count portfolio
+$count_project = "SELECT count(*) as total_project FROM `portfolio`";
+$query_project = mysqli_query($db,$count_project);
+$total_project = mysqli_fetch_assoc($query_project);
 
 //testimonial
 $select_testimonial = "SELECT * FROM `testimonial`";
