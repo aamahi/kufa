@@ -1,6 +1,7 @@
 # Kufa is a portfilo project develoap by PHP7 and MySQL.
-  ===========================================================================================================
-  step 1: clone or download it : https://github.com/aamahi/kufa/
+ <hr/>
+ 
+  <p> step 1: clone or download it : https://github.com/aamahi/kufa/ </p>
   step 2 : create_database name name: kufa
   step 3 : insert import (kufa.sql) file 
   step 4 : Run the project. 
