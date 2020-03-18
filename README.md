@@ -9,7 +9,7 @@
            
   <p> step 1: clone or download it : https://github.com/aamahi/kufa/ </p>
   <p> step 2 : create_database name name: kufa </p>
-  <p> step 3 : insert import (kufa.sql) file </p>
+  <p> step 3 : import (kufa.sql) file in your database (kufa)</p>
   <p> step 4 : Run the project. 
   -> admin : <p style="color:red">http://localhost/kufa/admin </p>
   -> Frontend : <p style="color:red"> http://localhost/kufa </p>
