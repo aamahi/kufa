@@ -1,4 +1,13 @@
-<div class="page-header">
+<?php
+//  count unreadmessage
+$count_unread_message = "SELECT count(*) as total_unread_message FROM `contact_message` WHERE `status`=0";
+$all_unread_message = "SELECT * FROM `contact_message` WHERE `status`=0";
+$query_unread_message = mysqli_query($db,$count_unread_message);
+$query_all_unread_message = mysqli_query($db,$all_unread_message);
+$total_unread_message = mysqli_fetch_assoc($query_unread_message);
+
+?>
+        <div class="page-header">
             <!-- LEFTSIDE header -->
             <div class="leftside-header">
                 <div class="logo">
@@ -20,7 +29,44 @@
                     <div class="header-separator"></div>
                 </div>
                 <!--NOCITE HEADERBOX-->
-               
+                <div class="header-section hidden-xs" id="notice-headerbox">
+                    <div class="notice" id="messages-notice">
+                        <i class="fa fa-comments-o" aria-hidden="true"><span class="badge badge-xs badge-top-right x-danger"><?=$total_unread_message['total_unread_message'];?></span>
+                        </i>
+                        <div class="dropdown-box basic">
+                            <div class="drop-header ">
+                                <h3><i class="fa fa-comments" aria-hidden="true"></i> Messages</h3>
+                                <span class="badge x-danger b-rounded"><?=$total_unread_message['total_unread_message'];?></span>
+                            </div>
+                            <div class="drop-content">
+                                <div class="widget-list list-left-element">
+                                    <ul>
+                                        <?php
+                                            foreach ($query_all_unread_message as $unread_message):
+                                        ?>
+                                        <li>
+                                            <a href="#">
+                                                <div class="left-element"><img alt="profile photo" src="images/defult.png" /></div>
+                                                <div class="text">
+                                                    <span class="title"><?=$unread_message['name']?></span>
+                                                    <span class="subtitle"><?=$unread_message['message'];?></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <?php
+                                            endforeach;
+                                        ?>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="drop-footer">
+                                <a href="all_message.php">See all messages</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-separator"></div>
+                </div>
                 <!--USER HEADERBOX -->
                 <div class="header-section" id="user-headerbox">
                     <div class="user-header-wrap">

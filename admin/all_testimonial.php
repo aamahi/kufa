@@ -58,7 +58,7 @@ include_once ('header.php');
                                             ?>
                                         </td>
                                         <td>
-                                            <a href="layout/deletej.php?id=<?=$testimonial['id'];?>&img=<?=$testimonial['image'];?>" class="btn btn-danger">Delete</a>
+                                            <a href="layout/delete_testimonial.php?id=<?=$testimonial['id'];?>&img=<?=$testimonial['image'];?>" class="btn btn-danger">Delete</a>
                                             <a href="read_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-primary">Read Message</a>
                                         </td>
                                     </tr>

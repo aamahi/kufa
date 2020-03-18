@@ -43,7 +43,7 @@ include_once ('header.php');
                                     <tr>
                                         <td><img width="48" src="../portfolio/<?=$portfolio['photo'];?>"></td>
                                         <td><?=$portfolio['name'];?></td>
-                                        <td><?=$portfolio['position']?></td>
+                                        <td><?=$portfolio['category']?></td>
                                         <td>
                                             <?php
                                                 if($portfolio['status']==1) {

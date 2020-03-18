@@ -36,9 +36,11 @@ if($_POST['add_clint']){
             if($upload){
                 $sql = "INSERT INTO `clint`(`company_name`,`company_logo`) VALUE('{$company_name}','{$logo}')";
                 $insert = mysqli_query($db,$sql);
-                if($insert){
-                    header("location:index.php");
-                }
+//                echo "OK";
+//                die();
+//                if($insert){
+                    header("location:all_clint.php");
+//                }
             }else{
                 $clint_error['company_logo'] = "Logo uploaded Failed";
             }

@@ -31,7 +31,6 @@ include_once ('header.php');
                                 <tr>
                                     <th>Icon</th>
                                     <th>Name</th>
-                                    <th>Details</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -43,7 +42,6 @@ include_once ('header.php');
                                     <tr>
                                         <td><i style="font-size: 45px;" class="fa <?=$service['icon']?>"></i></td>
                                         <td><?=$service['name'];?></td>
-                                        <td><?=$service['details'];?></td>
                                         <td>
                                             <?php
                                                 if($service['status']==1) {
