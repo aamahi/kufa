@@ -48,11 +48,11 @@ include_once ('header.php');
                                             <?php
                                                 if($testimonial['status']==1) {
                                              ?>
-                                                <a href="layout/deactive_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-success">Active</a>
+                                                <a href="layout/deactive_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-success">Show</a>
                                             <?php
                                                 }else{
                                              ?>
-                                                <a href="layout/active_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-warning">Deactive</a>
+                                                <a href="layout/active_testimonial.php?id=<?=$testimonial['id'];?>" class="btn btn-warning">Don't Show</a>
                                             <?php
                                                  }
                                             ?>

@@ -57,7 +57,7 @@ include_once ('header.php');
                                         </td>
                                         <td>
                                             <a href="layout/delete_about.php?id=<?=$about['id'];?>&img=<?=$about['image'];?>" class="btn btn-danger">Delete</a>
-                                            <a href="read_about.php?id=<?=$about['id'];?>" class="btn btn-primary">Read Message</a>
+                                            <a href="read_about.php?id=<?=$about['id'];?>" class="btn btn-primary">About Details</a>
                                         </td>
                                     </tr>
                                  <?php
