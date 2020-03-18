@@ -15,9 +15,7 @@
   -> Frontend : http://localhost/kufa
   <p> step 5 : Register a account with valid info  or direct login : (Email: obaidul@obi.com and Password : Obaidul5)  </p>
   <p> step 6 : login . </p>
-  ==============================================================================================================
-  
-  
+<hr/>
 # Some screenshoot of the project
 ### Frontend
 
@@ -28,3 +26,4 @@
 <img src="git_img/admin1.png">
 <img src="git_img/admin2.png">
 <img src="git_img/admin2.png">
+##Thank you 
