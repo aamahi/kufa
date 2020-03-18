@@ -3,7 +3,7 @@
  <div>
       <div class="js-item-description item-description has-toggle">
           <div class="user-html user-html__with-lazy-load"><p>
-        Teashop –  Kufa is a modern and functional Dynamic portfolio wesite for your Personal and company portfolio website &amp; Resume. Kufa Portfolio has an intuitive visual interface and informative layout that looks wonderful on any portfoio, since it’s fully dynamic for user friendly.It is perfect for your personal or company !
+       Kufa - is a modern and functional Dynamic portfolio wesite for your Personal and company portfolio website &amp; Resume. Kufa Portfolio has an intuitive visual interface and informative layout that looks wonderful on any portfoio, since it’s fully dynamic for user friendly.It is perfect for your personal or company !
 </p>
 <hr/>
            
