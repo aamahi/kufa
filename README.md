@@ -11,8 +11,8 @@
   <p> step 2 : create_database name name: kufa </p>
   <p> step 3 : import (kufa.sql) file in your database (kufa)</p>
   <p> step 4 : Run the project. 
-  -> admin : <p style="color:red">http://localhost/kufa/admin </p>
-  -> Frontend : <p style="color:red"> http://localhost/kufa </p>
+  -> admin : <h2 style="color:red">http://localhost/kufa/admin </h2>
+  -> Frontend : <h2 style="color:red"> http://localhost/kufa </h2>
   <p> step 5 : Register a account with valid info  or direct login : (Email: obaidul@obi.com and Password : Obaidul5)  </p>
   <p> step 6 : login . </p>
 <hr/>
