@@ -3,6 +3,8 @@
         ?>
         <!-- preloader-end -->
 
+<!-- this file has been edited as test purpose -->
+
         <!-- header-start -->
         <?php
             include_once('mahi/layout/header.php'); 
